@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register page</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        table{
+            box-shadow:0 0 10px black;
+            padding: 30px;
+            background-color: aliceblue;
+            height: 400px;
+            width: 500px;
+            border-radius: 10px;
+            
+
+
+        }
+        tr{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+
+        }
+
+       td{
+        padding: 10px;
+       }
+
+       th{
+        font-size: 40px;
+        padding: 20px;
+       }
+
+       input[type="text"],[type="email"],[type="password"],[type="tel"]{
+        height: 40px;
+        width: 100%;
+        border-radius: 5px;
+       }
+
+       input[type="submit"]{
+        width: 100%;
+        height: 40px;
+        color: white;
+        background-color: lightgreen;
+        border-radius: 10px;
+        font-size: 25px;
+       }
+
+       input[type="submit"]:hover{
+        background-color: green;
+
+
+       }
+
+       .error{
+        color: red;
+        font-size: medium;
+       }
+
+
+
+    </style>
+</head>
+<body>
+    <form id="nform">
+        <table>
+            <tr>
+                <th>Register</th>
+            </tr>
+            <tr>
+                <td><label>Name</label><br>
+                    <input type="text" id="name" placeholder="Enter name" ><br><span id="nerror" class="error"></span></td>
+            </tr>
+            <tr>
+                <td><label>Email address</label><br>
+                    <input type="email" id="email" placeholder="enter email" ><br><span id="Eerror" class="error"></span></td>
+            </tr>
+            <tr>
+                <td><label>Password</label><br>
+                    <input type="password" id="password" placeholder="enter password" ><br><span id="perror" class="error"></span></td>
+            </tr>
+            <tr>
+                <td><label>mobile number</label><br>
+                    <input type="tel" id="mobile" placeholder="enter mobile number" ><br><span id="merror" class="error"></span></td>
+            </tr>
+            <tr><td><input type="submit" value="Login"></td></tr>
+        </table>
+    </form>
+    
+    <script src="register.js"></script>
+</body>
+</html>
